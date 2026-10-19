@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Subsurface has moved</title>
+<meta name="robots" content="noindex">
+<link rel="canonical" href="https://subsurface-demo.pages.dev/">
+<script>
+  // The demo moved to its own address. The same page opens there: the path after
+  // /subsurface-workbench/, its query and its hash (a shared deck travels in the hash).
+  (function () {
+    var prefix = "/subsurface-workbench";
+    var path = location.pathname;
+    path = path.indexOf(prefix) === 0 ? path.slice(prefix.length) : "/";
+    location.replace("https://subsurface-demo.pages.dev" + (path || "/") + location.search + location.hash);
+  })();
+</script>
+<meta http-equiv="refresh" content="3; url=https://subsurface-demo.pages.dev/">
+<style>
+  :root { color-scheme: dark; }
+  body { margin: 0; min-height: 100vh; display: grid; place-items: center; background: #0b0f1e; color: #e5e7eb; font: 16px/1.5 system-ui, -apple-system, "Segoe UI", sans-serif; }
+  main { padding: 24px; text-align: center; }
+  a { color: #a78bfa; }
+</style>
+</head>
+<body>
+<main>
+  <p>Subsurface has moved to <a href="https://subsurface-demo.pages.dev/">subsurface-demo.pages.dev</a>.</p>
+</main>
+</body>
+</html>
